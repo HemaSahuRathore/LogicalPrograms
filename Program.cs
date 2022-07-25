@@ -12,7 +12,7 @@
             //loop to exit when use enter select exit
             do { 
                 Console.WriteLine("\nPlease select an option to procced :");
-                Console.WriteLine("1.Print Fibonacci Series \n2.Perfect Number \n3.Exit  ");
+                Console.WriteLine("1.Print Fibonacci Series \n2.Perfect Number \n3.Prime Number \n4.Exit  ");
                 option = Convert.ToInt32(Console.ReadLine());
 
                 switch (option)
@@ -25,12 +25,16 @@
                         PerfectNumber perfectNumber = new PerfectNumber();
                         perfectNumber.CheckPerfectNum();
                         break;
+                    case 3:
+                        PrimeNumber primeNumber = new PrimeNumber();
+                        primeNumber.CheckPrimeNum();
+                        break;
                     default:
                         Console.WriteLine("Please enter a valid option");
                         break;
                 }
 
-            } while(option != 3);
+            } while(option != 4);
         }
     }
 }
