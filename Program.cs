@@ -12,7 +12,7 @@
             //loop to exit when use enter select exit
             do { 
                 Console.WriteLine("\nPlease select an option to procced :");
-                Console.WriteLine("1.Print Fibonacci Series \n2.Perfect Number \n3.Prime Number \n4.Reverse Number \n5.Coupon Number \n6.Stop Watch \n7 Notes Vending machine \n8.Exit  ");
+                Console.WriteLine("1.Print Fibonacci Series \n2.Perfect Number \n3.Prime Number \n4.Reverse Number \n5.Coupon Number \n6.Stop Watch \n7.Notes Vending machine \n8.Day Of Week\n9.Exit  ");
                 option = Convert.ToInt32(Console.ReadLine());
 
                 switch (option)
@@ -43,6 +43,9 @@
                         break;
                     case 7:
                         NotesVendingMachine.FindNotes(); //static method, calling using class name
+                        break;
+                    case 8:
+                        DayOfWeekP.DayOfWeek();
                         break;
 
 
