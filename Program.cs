@@ -1,5 +1,5 @@
 ﻿namespace D6LogicalProblems
-{   //Program 1: Fibonacci Series
+{   
     public class Program
     {
         //An entrypoint of any console app
@@ -12,7 +12,7 @@
             //loop to exit when use enter select exit
             do { 
                 Console.WriteLine("\nPlease select an option to procced :");
-                Console.WriteLine("1.Print Fibonacci Series \n2.Exit  ");
+                Console.WriteLine("1.Print Fibonacci Series \n2.Perfect Number \n3.Exit  ");
                 option = Convert.ToInt32(Console.ReadLine());
 
                 switch (option)
@@ -21,12 +21,16 @@
                         Fibonacci fibonacci = new Fibonacci();
                         fibonacci.PrintFibonacciSeries();
                         break;
+                    case 2:
+                        PerfectNumber perfectNumber = new PerfectNumber();
+                        perfectNumber.CheckPerfectNum();
+                        break;
                     default:
                         Console.WriteLine("Please enter a valid option");
                         break;
                 }
 
-            } while(option != 2);
+            } while(option != 3);
         }
     }
 }
