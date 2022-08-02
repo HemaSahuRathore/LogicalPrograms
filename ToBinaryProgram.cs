@@ -45,6 +45,5 @@ namespace D6LogicalProblems
             }
        
         }
-
     }
 }
