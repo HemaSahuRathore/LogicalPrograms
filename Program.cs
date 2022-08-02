@@ -13,7 +13,7 @@
             do { 
                 Console.WriteLine("\nPlease select an option to procced :");
                 Console.WriteLine("1.Print Fibonacci Series \n2.Perfect Number \n3.Prime Number \n4.Reverse Number \n5.Coupon Number \n6.Stop Watch \n7.Notes Vending machine \n8.Day Of Week");
-                Console.WriteLine("9.Temperature Conversion \n10.Monthly payment\n11.Square Root \n12.Decimal to Binary Representation \n13.Exit  ");
+                Console.WriteLine("9.Temperature Conversion \n10.Monthly payment\n11.Square Root \n12.Decimal to Binary Representation \n13.Decimal to Binary after swapping Nibbles \n14.Exit  ");
                 option = Convert.ToInt32(Console.ReadLine());
 
                 switch (option)
@@ -60,10 +60,13 @@
                     case 12:
                         ToBinaryProgram.ToBinary();
                         break;
+                    case 13:
+                        DecimalAfterSwappingNibble.DecimalAfterNibbleSwap();
+                        break;
 
                 }
 
-            } while(option != 13);
+            } while(option != 14);
         }
     }
 }

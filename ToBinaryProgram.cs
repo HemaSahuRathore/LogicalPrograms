@@ -8,9 +8,8 @@ namespace D6LogicalProblems
 {
     public class ToBinaryProgram
     {
-        public static void ToBinary()
-        {   
-            //Variables
+        public static int[] ToBinary()
+        {   //variables
             int decimalNum;
             int sum = 0;
 
@@ -34,17 +33,15 @@ namespace D6LogicalProblems
                     decimalNum = decimalNum;
 
                 }
-
             }
 
-            Console.WriteLine("Binary Representation is : ");
-            //Loop to display Binary array
             for (int i = 0; i < 8; i++)
             {
                 Console.Write(binary[i] + " ");
             }
-       
-        }
 
+            return binary;
+        }
     }
 }
+
